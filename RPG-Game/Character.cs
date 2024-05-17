@@ -1,6 +1,6 @@
 ﻿namespace RPG_Game;
 
-abstract class Character : IDamageable
+public abstract class Character : IDamageable
 {
     public string Name { get; set; }
     public int Hp { get; set; }
