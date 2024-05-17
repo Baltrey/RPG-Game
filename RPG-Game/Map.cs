@@ -2,5 +2,9 @@
 
 public abstract class Map
 {
-    public abstract void OpenMap();
+    protected string _name;
+    public virtual void OpenMap()
+    {
+        Console.WriteLine("Hej välkommen till " + _name);
+    }
 }

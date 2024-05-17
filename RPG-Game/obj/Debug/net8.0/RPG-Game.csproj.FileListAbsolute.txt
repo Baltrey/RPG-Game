@@ -1,0 +1,15 @@
+c:\Users\baltazar.biverstal\Documents\programering2\RPG-Game\RPG-Game\bin\Debug\net8.0\RPG-Game.exe
+c:\Users\baltazar.biverstal\Documents\programering2\RPG-Game\RPG-Game\bin\Debug\net8.0\RPG-Game.deps.json
+c:\Users\baltazar.biverstal\Documents\programering2\RPG-Game\RPG-Game\bin\Debug\net8.0\RPG-Game.runtimeconfig.json
+c:\Users\baltazar.biverstal\Documents\programering2\RPG-Game\RPG-Game\bin\Debug\net8.0\RPG-Game.dll
+c:\Users\baltazar.biverstal\Documents\programering2\RPG-Game\RPG-Game\bin\Debug\net8.0\RPG-Game.pdb
+c:\Users\baltazar.biverstal\Documents\programering2\RPG-Game\RPG-Game\obj\Debug\net8.0\RPG-Game.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\baltazar.biverstal\Documents\programering2\RPG-Game\RPG-Game\obj\Debug\net8.0\RPG-Game.AssemblyInfoInputs.cache
+c:\Users\baltazar.biverstal\Documents\programering2\RPG-Game\RPG-Game\obj\Debug\net8.0\RPG-Game.AssemblyInfo.cs
+c:\Users\baltazar.biverstal\Documents\programering2\RPG-Game\RPG-Game\obj\Debug\net8.0\RPG-Game.csproj.CoreCompileInputs.cache
+c:\Users\baltazar.biverstal\Documents\programering2\RPG-Game\RPG-Game\obj\Debug\net8.0\RPG-Game.sourcelink.json
+c:\Users\baltazar.biverstal\Documents\programering2\RPG-Game\RPG-Game\obj\Debug\net8.0\RPG-Game.dll
+c:\Users\baltazar.biverstal\Documents\programering2\RPG-Game\RPG-Game\obj\Debug\net8.0\refint\RPG-Game.dll
+c:\Users\baltazar.biverstal\Documents\programering2\RPG-Game\RPG-Game\obj\Debug\net8.0\RPG-Game.pdb
+c:\Users\baltazar.biverstal\Documents\programering2\RPG-Game\RPG-Game\obj\Debug\net8.0\RPG-Game.genruntimeconfig.cache
+c:\Users\baltazar.biverstal\Documents\programering2\RPG-Game\RPG-Game\obj\Debug\net8.0\ref\RPG-Game.dll
