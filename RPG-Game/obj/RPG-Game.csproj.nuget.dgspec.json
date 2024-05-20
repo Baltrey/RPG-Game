@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\baltazar.biverstal\\Documents\\programering2\\RPG-Game\\RPG-Game\\RPG-Game.csproj": {}
+    "C:\\Users\\baltazar.biverstal\\Documents\\programering2\\RPG-Game\\RPG-Game\\RPG-Game.csproj": {}
   },
   "projects": {
-    "c:\\Users\\baltazar.biverstal\\Documents\\programering2\\RPG-Game\\RPG-Game\\RPG-Game.csproj": {
+    "C:\\Users\\baltazar.biverstal\\Documents\\programering2\\RPG-Game\\RPG-Game\\RPG-Game.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\baltazar.biverstal\\Documents\\programering2\\RPG-Game\\RPG-Game\\RPG-Game.csproj",
+        "projectUniqueName": "C:\\Users\\baltazar.biverstal\\Documents\\programering2\\RPG-Game\\RPG-Game\\RPG-Game.csproj",
         "projectName": "RPG-Game",
-        "projectPath": "c:\\Users\\baltazar.biverstal\\Documents\\programering2\\RPG-Game\\RPG-Game\\RPG-Game.csproj",
+        "projectPath": "C:\\Users\\baltazar.biverstal\\Documents\\programering2\\RPG-Game\\RPG-Game\\RPG-Game.csproj",
         "packagesPath": "C:\\Users\\baltazar.biverstal\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\baltazar.biverstal\\Documents\\programering2\\RPG-Game\\RPG-Game\\obj\\",
+        "outputPath": "C:\\Users\\baltazar.biverstal\\Documents\\programering2\\RPG-Game\\RPG-Game\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\baltazar.biverstal\\AppData\\Roaming\\NuGet\\NuGet.Config"

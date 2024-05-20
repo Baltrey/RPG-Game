@@ -2,6 +2,7 @@
 
 public abstract class Character : IDamageable
 {
+    public Inventory Inventory = new();
     public string Name { get; set; }
     public int Hp { get; set; }
     public void Hurt(int Amount)
