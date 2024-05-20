@@ -38,6 +38,14 @@ public class Enemy : Character
             }
         }
     }
+    public Enemy(int difficulty, int baseHp)
+    {
+        string[] Names = { "Goblin", "Skeleton", "Zombie", "Ghost" };
+        int i = Random.Shared.Next(Names.Length);
+        Name = Names[i];
+        _difficulty = difficulty;
+        _hp = baseHp;
+    }
     public int Death()
     {
         if (IsDead)
@@ -49,12 +57,9 @@ public class Enemy : Character
             return 0;
         }
     }
-    public Enemy(int difficulty, int baseHp)
+    public void attack(IDamageable target, int Amount)
     {
-        string[] Names = { "Goblin", "Skeleton", "Zombie", "Ghost" };
-        int i = Random.Shared.Next(Names.Length);
-        Name = Names[i];
-        _difficulty = difficulty;
-        _hp = baseHp;
+        target.Hurt(Amount);
     }
+    //metod för att skada targets som kan bli skadade
 }

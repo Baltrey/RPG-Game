@@ -1,7 +1,8 @@
 ﻿using System.Reflection.Metadata.Ecma335;
 using RPG_Game;
-string amsddmamsd = "Forrest";
-Forrest forrest = new(amsddmamsd);
 
-forrest.OpenMap();
+Menu menu = new();
+
+menu.MenuStart();
+
 Console.ReadLine();

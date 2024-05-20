@@ -2,9 +2,9 @@
 
 public class Forrest : Map
 {
-    public Forrest(string name)
+    public Forrest()
     {
-        _name = name;
+        _name = "Forrest";
     }
     public override void OpenMap()
     {

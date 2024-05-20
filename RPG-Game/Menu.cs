@@ -3,7 +3,15 @@
 public class Menu
 {
     Utility utility = new();
-    string[] _options = { "Town", "Forrest", "Plains", "End Game" };
+    Town town = new();
+    Forrest forrest = new();
+    Plains plains = new();
+    List<string> _options = new();
+    public Menu()
+    {
+        _options = new List<string>() { town.Name, forrest.Name, plains.Name, "End Game" };
+    }
+
     void ListOptions()
     {
         foreach (var item in _options)
@@ -13,8 +21,10 @@ public class Menu
         //skriver ut alla items från listan _options
     }
     //metod för att skriva ut options
-    public void MenuStart(){
+    public void MenuStart()
+    {
         Console.WriteLine("Vart vill du gå/göra?");
+        Console.WriteLine("Skriv respektiv Nummer");
         ListOptions();
         int i = utility.GetNummber();
 
