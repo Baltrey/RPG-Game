@@ -1,6 +1,6 @@
 ﻿namespace RPG_Game;
 
-public class Item
+public class City : Map
 {
 
 }

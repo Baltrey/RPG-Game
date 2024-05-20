@@ -12,12 +12,14 @@ public class Hero : Character
     //skapar en kompsition utility för dens funktioner i Hero
     public Hero()
     {
-        Hp = 100;
-        while (true){
+        _hp = 100;
+        while (true)
+        {
             Console.WriteLine("Hej! Vad vill du heta?");
             string i = Console.ReadLine();
             Console.WriteLine("Vill du heta: " + i + " ? Y/N");
-            if(utility.YesAndNo()){
+            if (utility.YesAndNo())
+            {
                 Name = i;
                 return;
             }
@@ -26,15 +28,18 @@ public class Hero : Character
         //frågara användaren efter namn den vill heta
 
     }
-    public void attack(IDamageable target, int Amount) {
+    public void attack(IDamageable target, int Amount)
+    {
         target.Hurt(Amount);
     }
     //metod för att skada targets som kan bli skadade
-    public void LevelUp(int AmountXp){
+    public void LevelUp(int AmountXp)
+    {
         _xp += AmountXp;
-        if (_xp >= _requiredXp) {
-            _level ++;
-            Console.WriteLine("LevelUp! Du är " + _level+ " Level");
+        if (_xp >= _requiredXp)
+        {
+            _level++;
+            Console.WriteLine("LevelUp! Du är " + _level + " Level");
         }
     }
 }

@@ -2,12 +2,12 @@
 
 public abstract class Character : IDamageable
 {
-    public Inventory Inventory = new();
+    public Inventory Inventory { get; set; } = new();
     public string Name { get; set; }
-    public int Hp { get; set; }
+    protected int _hp;
     public void Hurt(int Amount)
     {
-        Hp -= Amount;
+        _hp -= Amount;
     }
 }
 //skapar klassen Character från interface IDamageable
