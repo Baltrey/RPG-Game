@@ -2,7 +2,7 @@
 using RPG_Game;
 
 Menu menu = new();
+Hero hero = new();
 
-menu.MenuStart();
+menu.MenuStart(hero);
 
-Console.ReadLine();

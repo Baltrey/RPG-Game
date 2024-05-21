@@ -2,10 +2,10 @@
 
 public abstract class Character : IDamageable
 {
-    public Inventory Inventory { get; set; } = new();
     public string Name { get; set; }
+    public bool IsDead { get; set; } = false;
     protected int _hp;
-    public void Hurt(int Amount)
+    public virtual void Hurt(int Amount)
     {
         _hp -= Amount;
     }

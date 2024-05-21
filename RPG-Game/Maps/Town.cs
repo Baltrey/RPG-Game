@@ -6,4 +6,9 @@ public class Town : Map
     {
         _name = "Town";
     }
+    public void OpenMap(Hero hero)
+    {
+        OpenMap();
+
+    }
 }

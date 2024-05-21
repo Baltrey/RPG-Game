@@ -6,27 +6,46 @@ public class Plains : Map
     public Plains()
     {
         _name = "Plains";
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 20; i++)
         {
-            Enemy enemy = new(i, 100);
+            Enemy enemy = new(i);
+            //skapar enemy med difficoulty i
             enemies.Enqueue(enemy);
+            //lägger till enemy
         }
+        //vid instans skapar den 20 enemies i listan enemies samt ger sig själv namnen plains.
     }
     public void OpenMap(Hero hero)
     {
-        base.OpenMap();
+        OpenMap();
+        Console.ReadLine();
         while (_active)
         {
             Encounter(hero);
-            _active = Continue();
+            if (_active)
+            {
+                _active = Continue();
+            }
         }
     }
     void Encounter(Hero hero)
     {
         Console.WriteLine(enemies.Peek().Name + " Dyker upp!!!");
-        while (!enemies.Peek().IsDead)
+        while (!enemies.Peek().IsDead && !hero.IsDead)
         {
-
+            enemies.Peek().attack(hero);
+            hero.attack(enemies.Peek());
+            Thread.Sleep(100);
+        }
+        if (enemies.Peek().IsDead)
+        {
+            hero.LevelUp(enemies.Peek().Death());
+            enemies.Dequeue();
+        }
+        if (hero.IsDead)
+        {
+            _active = false;
+            hero.Death();
         }
     }
 }

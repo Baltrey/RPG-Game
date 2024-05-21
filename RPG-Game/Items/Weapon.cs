@@ -2,5 +2,11 @@
 
 public class Weapon : Item
 {
-    public int Damage { get; set; }
+    int _damage;
+    public int Damage { get { return _damage; } }
+    public Weapon(string name, int damage)
+    {
+        Name = name;
+        _damage = damage;
+    }
 }

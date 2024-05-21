@@ -9,13 +9,16 @@ public abstract class Map
         get { return _name; }
     }
     protected bool _active;
-    public virtual void OpenMap()
+    public void OpenMap()
     {
+        Console.Clear();
         Console.WriteLine("Hej välkommen till " + _name);
     }
     protected bool Continue()
     {
         Console.WriteLine("Vill du forsätta att vara i " + _name + " Y/N");
         return utility.YesAndNo();
+        //får en bool av utility YesAndNo och returnerar den 
     }
+    //frågar spelaren om den vill fortsätta var i angivna mapen
 }

@@ -1,4 +1,6 @@
-﻿namespace RPG_Game;
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace RPG_Game;
 
 public class Utility
 {

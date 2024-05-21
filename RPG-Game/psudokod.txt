@@ -1,3 +1,3 @@
 programmet ska ge 4 options i början.
 en är tänkt att vara något liknaden till mitt inventory spel men ändå urskiljning
-en annan är talk baserat att man  
+en annan är talk baserat att man kan fråga npc saker 

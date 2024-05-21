@@ -6,9 +6,9 @@ public class Forrest : Map
     {
         _name = "Forrest";
     }
-    public override void OpenMap()
+    public void OpenMap(Hero hero)
     {
-        Console.WriteLine("Hej!!!");
-        base.OpenMap();
+        OpenMap();
+
     }
 }
