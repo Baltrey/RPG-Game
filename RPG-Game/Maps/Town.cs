@@ -9,6 +9,6 @@ public class Town : Map
     public void OpenMap(Hero hero)
     {
         OpenMap();
-
+        Console.ReadLine();
     }
 }

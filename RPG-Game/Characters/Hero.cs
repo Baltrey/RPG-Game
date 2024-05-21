@@ -2,7 +2,7 @@
 
 namespace RPG_Game;
 
-public class Hero : Character, IDamageable
+public class Hero : Character
 {
     int _level;
     int _xp;
