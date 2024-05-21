@@ -17,8 +17,7 @@ public class Plains : Map
     }
     public void OpenMap(Hero hero)
     {
-        OpenMap();
-        Console.ReadLine();
+        base.OpenMap();
         while (_active)
         {
             Encounter(hero);
@@ -27,6 +26,7 @@ public class Plains : Map
                 _active = Continue();
             }
         }
+        Console.ReadLine();
     }
     void Encounter(Hero hero)
     {

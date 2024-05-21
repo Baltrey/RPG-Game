@@ -8,6 +8,8 @@ public class Hero : Character
     int _xp;
     int _requiredXp;
 
+    public int coins { get; set; }
+
     Stack<Weapon> equippedWeapon = new();
     Inventory inventory = new();
     //skapar kompositionen inventory i hero
