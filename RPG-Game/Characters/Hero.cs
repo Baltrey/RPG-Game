@@ -60,12 +60,15 @@ public class Hero : Character
     public void ChangeWeapon(Weapon weapon)
     {
         equippedWeapon.Push(weapon);
+        //lägger in weapon i equippedWeapon
     }
+    //ändrar ens vapen
     public override void Hurt(int Amount)
     {
         _hp = (int)(_hp * (1.2 * _level)) - Amount;
         Console.WriteLine(Name + " har " + _hp + " Hp kvar");
     }
+    //metod för att ta skada
     public void Death()
     {
         Console.Clear();

@@ -27,6 +27,7 @@ public class Menu
     {
         while (_gameActive)
         {
+            Console.Clear();
             Console.WriteLine("Vart vill du gå/göra?");
             Console.WriteLine("Skriv respektiv Nummer");
             ListOptions();

@@ -13,6 +13,8 @@ public class Inventory
             Console.Write(item.Name + ", ");
         }
         Console.WriteLine("I ditt Inventory");
+        Console.WriteLine("Inventory har " + _space + " kvar");
+        Console.ReadLine();
     }
     public void AddItems(Item item)
     {

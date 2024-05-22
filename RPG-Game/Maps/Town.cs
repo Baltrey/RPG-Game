@@ -10,5 +10,15 @@ public class Town : Map
     {
         OpenMap();
         Console.ReadLine();
+        while (_active)
+        {
+
+        }
+    }
+    void OpenShop(Hero hero)
+    {
+        Console.WriteLine("Hej välkommen till shopen");
+
+
     }
 }
