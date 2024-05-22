@@ -11,7 +11,7 @@ public class Hero : Character
     public int coins { get; set; }
 
     Stack<Weapon> equippedWeapon = new();
-    Inventory inventory = new();
+    public Inventory inventory = new();
     //skapar kompositionen inventory i hero
     Utility utility = new();
     //skapar en kompsition utility för dens funktioner i Hero
@@ -20,6 +20,11 @@ public class Hero : Character
         _hp = 100;
         Weapon weapon = new("Stone-Sword", 10);
         equippedWeapon.Push(weapon);
+        Name = GetName();
+
+    }
+    string GetName()
+    {
         while (true)
         {
             Console.WriteLine("Hej! Vad vill du heta?");
@@ -27,8 +32,7 @@ public class Hero : Character
             Console.WriteLine("Vill du heta: " + i + " ? Y/N");
             if (utility.YesAndNo())
             {
-                Name = i;
-                return;
+                return i;
             }
             //frågar om input och om man är nöjd med valet man gjorde
         }
@@ -40,7 +44,7 @@ public class Hero : Character
         int i = (int)(equippedWeapon.Peek().Damage * (1.2 * _level));
         //skadar med weapons damage samt extra per level på hero
         target.Hurt(i);
-        Console.WriteLine("Du skadade med " + i);
+        Console.WriteLine(Name + " skadade med " + i);
     }
     //metod för att skada targets som kan bli skadade
     public void LevelUp(int AmountXp)
@@ -60,6 +64,7 @@ public class Hero : Character
     public override void Hurt(int Amount)
     {
         _hp = (int)(_hp * (1.2 * _level)) - Amount;
+        Console.WriteLine(Name + " har " + _hp + " Hp kvar");
     }
     public void Death()
     {

@@ -2,13 +2,13 @@
 
 public abstract class Map
 {
-    Utility utility = new();
+    protected Utility utility = new();
     protected string _name;
     public string Name
     {
         get { return _name; }
     }
-    protected bool _active;
+    protected bool _active = true;
     public void OpenMap()
     {
         Console.Clear();

@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System.Dynamic;
+using System.Security.Cryptography.X509Certificates;
 
 namespace RPG_Game;
 
@@ -24,6 +25,17 @@ public class Utility
         //retunerar numret som j
     }
     //kollar så att det är ett nummer och inte text
+    public int GetNummber(int start, int end)
+    {
+        int i = GetNummber();
+        while (!(i >= start) || !(i <= end))
+        {
+            Console.WriteLine("Skriv ett nummer mellan " + start + "-" + end);
+            i = GetNummber();
+        }
+        return i;
+    }
+    //metod för att få ett nummer mellan angivna parametrar
     public bool YesAndNo()
     {
         while (true)

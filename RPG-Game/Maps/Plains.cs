@@ -17,7 +17,7 @@ public class Plains : Map
     }
     public void OpenMap(Hero hero)
     {
-        base.OpenMap();
+        OpenMap();
         while (_active)
         {
             Encounter(hero);
@@ -28,9 +28,10 @@ public class Plains : Map
         }
         Console.ReadLine();
     }
-    void Encounter(Hero hero)
+    public void Encounter(Hero hero)
     {
         Console.WriteLine(enemies.Peek().Name + " Dyker upp!!!");
+
         while (!enemies.Peek().IsDead && !hero.IsDead)
         {
             enemies.Peek().attack(hero);

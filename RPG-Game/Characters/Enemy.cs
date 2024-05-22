@@ -6,7 +6,7 @@ public class Enemy : Character
 {
     int _xpDrop = Random.Shared.Next(100, 200);
     int _difficulty;
-    int _damage = Random.Shared.Next(10, 20);
+    int _damage;
 
     public int Hp
     {
@@ -49,6 +49,7 @@ public class Enemy : Character
     }
     public void attack(IDamageable target)
     {
+        _damage = Random.Shared.Next(10, 20);
         float i = ((float)(_damage * (1.2 * _difficulty)));
         //gör enemys 20% svårare per difficulty, skadar 20% mer
         target.Hurt((int)i);
@@ -59,5 +60,6 @@ public class Enemy : Character
     {
         Hp -= Amount;
         //gör att enemy får 20% mer hp per difficulty
+        Console.WriteLine(Name + " har " + Hp + " Hp kvar");
     }
 }

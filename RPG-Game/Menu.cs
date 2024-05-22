@@ -40,7 +40,7 @@ public class Menu
     //metod för att starta meny
     void GetOption(Hero hero)
     {
-        int i = utility.GetNummber();
+        int i = utility.GetNummber(1, 4);
         if (i == 1)
         {
             town.OpenMap(hero);
@@ -56,11 +56,6 @@ public class Menu
         if (i == 4)
         {
             _gameActive = false;
-        }
-        else
-        {
-            Console.Clear();
-            Console.WriteLine("Skriv ett nummer mellan 1 och 4!!");
         }
     }
 }
