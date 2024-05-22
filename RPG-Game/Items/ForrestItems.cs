@@ -2,7 +2,6 @@
 
 public class ForrestItems : Item
 {
-    public int value { get; set; }
     public ForrestItems()
     {
         Name = GetName();

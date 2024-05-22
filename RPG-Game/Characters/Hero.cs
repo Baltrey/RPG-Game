@@ -61,6 +61,7 @@ public class Hero : Character
     {
         equippedWeapon.Push(weapon);
         //lägger in weapon i equippedWeapon
+        Console.WriteLine("Du har nu " + weapon);
     }
     //ändrar ens vapen
     public override void Hurt(int Amount)

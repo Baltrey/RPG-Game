@@ -43,7 +43,6 @@ public class Utility
             string? i = Console.ReadLine().ToUpper();
             if (i == "Y")
             {
-                Console.Clear();
                 return true;
                 //om input = Y så returnerar den true
             }

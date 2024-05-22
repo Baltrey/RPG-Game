@@ -10,7 +10,7 @@ public class Menu
     bool _gameActive;
     public Menu()
     {
-        _options = new List<string>() { town.Name + " (1)", forrest.Name + " (2)", plains.Name + " (3)", "End Game (4)" };
+        _options = new List<string>() { town.Name + " (1)", forrest.Name + " (2)", plains.Name + " (3)", "Exit Game (4)" };
         _gameActive = true;
     }
 
