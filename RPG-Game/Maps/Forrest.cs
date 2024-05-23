@@ -12,6 +12,7 @@ public class Forrest : Map
     public void OpenMap(Hero hero)
     {
         OpenMap();
+        _active = true;
         Console.ReadLine();
         while (_active)
         {
