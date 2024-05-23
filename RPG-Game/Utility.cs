@@ -28,11 +28,14 @@ public class Utility
     public int GetNummber(int start, int end)
     {
         int i = GetNummber();
+        //får ett värde på i från metoden GetNummber
         while (!(i >= start) || !(i <= end))
         {
             Console.WriteLine("Skriv ett nummer mellan " + start + "-" + end);
             i = GetNummber();
+            //ändrar värdet på i från metoden GetNummber
         }
+        //kör loopen medans i inte är mer än start och mindre än end
         return i;
     }
     //metod för att få ett nummer mellan angivna parametrar
@@ -41,6 +44,7 @@ public class Utility
         while (true)
         {
             string? i = Console.ReadLine().ToUpper();
+            //får en string i av consolereadline och sen omvandlar den till to upper
             if (i == "Y")
             {
                 return true;
