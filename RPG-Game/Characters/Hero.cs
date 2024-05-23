@@ -41,7 +41,7 @@ public class Hero : Character
     }
     public void attack(IDamageable target)
     {
-        int i = (int)(equippedWeapon.Peek().Damage * (1.2 * _level));
+        int i = equippedWeapon.Peek().Damage + (int)(equippedWeapon.Peek().Damage * (0.2 * _level));
         //skadar med weapons damage samt extra per level på hero
         target.Hurt(i);
         Console.WriteLine(Name + " skadade med " + i);
@@ -66,7 +66,12 @@ public class Hero : Character
     //ändrar ens vapen
     public override void Hurt(int Amount)
     {
-        _hp = (int)(_hp * (1.2 * _level)) - Amount;
+        if (_hp <= 0)
+        {
+            IsDead = true;
+            return;
+        }
+        _hp = (int)(_hp + _hp * (0.2 * _level)) - Amount;
         Console.WriteLine(Name + " har " + _hp + " Hp kvar");
     }
     //metod för att ta skada

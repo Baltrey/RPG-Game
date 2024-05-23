@@ -8,26 +8,6 @@ public class Enemy : Character
     int _difficulty;
     int _damage;
 
-    public int Hp
-    {
-        get
-        {
-            float i = ((float)(_hp * (1.2 * _difficulty)));
-            //gör enemys 20% svårare per difficulty
-            return (int)i;
-        }
-        set
-        {
-            if ((_hp - value) > 0)
-            {
-                _hp -= value;
-            }
-            else
-            {
-                IsDead = true;
-            }
-        }
-    }
     public Enemy(int difficulty)
     {
         string[] Names = { "Goblin", "Skeleton", "Zombie", "Ghost" };
@@ -50,16 +30,21 @@ public class Enemy : Character
     public void attack(IDamageable target)
     {
         _damage = Random.Shared.Next(10, 20);
-        float i = ((float)(_damage * (1.2 * _difficulty)));
+        int i = (_damage + (int)(_damage * (0.2 * _difficulty)));
         //gör enemys 20% svårare per difficulty, skadar 20% mer
-        target.Hurt((int)i);
+        target.Hurt(i);
         Console.WriteLine(Name + " skadade dig med " + _damage);
     }
     //metod för att skada targets som kan bli skadade
     public override void Hurt(int Amount)
     {
-        Hp -= Amount;
-        //gör att enemy får 20% mer hp per difficulty
-        Console.WriteLine(Name + " har " + Hp + " Hp kvar");
+        if (_hp <= 0)
+        {
+            IsDead = true;
+            return;
+        }
+        _hp = (int)(_hp + _hp * (0.2 * _difficulty)) - Amount;
+        Console.WriteLine(Name + " har " + _hp + " Hp kvar");
     }
+    //metod för att ta skada
 }
