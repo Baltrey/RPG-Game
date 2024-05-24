@@ -3,6 +3,7 @@
 public abstract class Map
 {
     protected Utility utility = new();
+    //skapar en protected utility i Map
     protected string _name;
     public string Name
     {
@@ -14,6 +15,7 @@ public abstract class Map
         Console.Clear();
         Console.WriteLine("Hej välkommen till " + _name);
     }
+    //metod för att öppna mappen, skriver ut namn på den
     protected bool Continue()
     {
         Console.WriteLine("Vill du forsätta att vara i " + _name + " Y/N");
